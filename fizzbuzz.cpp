@@ -11,7 +11,7 @@ using namespace std;
 int main() {
 
 	for (int i=1; i < 101; ++i) {
-		if (((i % 3) == 0) && ((i % 5) == 0))
+		if (((i % 15) == 0)) // i % 3 == 0 && i % 5 == 0 because 3 and 5 are prime and no gcd exists beyond 1, means when 3 and 5 are both divisble means i % 15 == 0
 			cout << "FizzBuzz\n";
 		else if ((i % 5) == 0)
 			cout << "Buzz\n";
